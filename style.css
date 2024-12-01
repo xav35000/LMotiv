@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    background-color: #0d1117;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, #1f2937, #0d1117);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #8b949e;
+}
+
+.header .title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #58a6ff;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+    color: #8b949e;
+}
+
+.main {
+    padding: 2rem 1rem;
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background: #161b22;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #30363d;
+}
+
+.section h2 {
+    color: #58a6ff;
+    border-bottom: 2px solid #8b949e;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.letter-container p {
+    margin: 0.5rem 0;
+    color: #c9d1d9;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #161b22;
+    color: #8b949e;
+    font-size: 1rem;
+    border-top: 2px solid #30363d;
+}
+
+li {
+    margin: 0.5rem 0;
+    color: #c9d1d9;
+    font-weight: bold;
+}
+/* Glitch courtesy of ChatGPT to discover css animations LMAO */
+.glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+  }
+
+  @keyframes glitch {
+    2%, 64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+    4%, 60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+  }
+
+  .glitch::before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+  @keyframes glitchTop {
+    2%, 64% {
+      transform: translate(2px, -2px);
+    }
+    4%, 60% {
+      transform: translate(-2px, 2px);
+    }
+    62% {
+      transform: translate(13px, -1px) skew(-13deg);
+    }
+  }
+
+  .glitch::after {
+    animation: glitchBottom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+
+  @keyframes glitchBottom {
+    2%, 64% {
+      transform: translate(-2px, 0);
+    }
+    4%, 60% {
+      transform: translate(2px, 0);
+    }
+    62% {
+      transform: translate(-22px, 5px) skew(21deg);
+    }
+  }
