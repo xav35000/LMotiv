@@ -67,6 +67,9 @@ li {
     color: #c9d1d9;
     font-weight: bold;
 }
+span.block-bots { 
+display: none; 
+}
 /* Glitch courtesy of ChatGPT to discover css animations LMAO */
 .glitch {
     position: relative;
