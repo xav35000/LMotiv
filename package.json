@@ -1,0 +1,15 @@
+{
+  "name": "motivation",
+  "version": "2.0.0",
+  "description": "",
+  "main": "antibot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kofy.dev",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
